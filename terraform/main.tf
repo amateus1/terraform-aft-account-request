@@ -3,8 +3,8 @@ module "sandbox" {
 
   control_tower_parameters = {
     AccountEmail              = "al-sandbox@mateusit.com"
-    AccountName               = "sandbox-aft"
-    ManagedOrganizationalUnit = "Sandbox"
+    AccountName               = "sandbox-aft-2"
+    ManagedOrganizationalUnit = "Sandbox-2"
     SSOUserEmail              = "al-sandbox@mateusit.com"
     SSOUserFirstName          = "Sandbox"
     SSOUserLastName           = "AFT"
@@ -16,12 +16,12 @@ module "sandbox" {
 
   change_management_parameters = {
     change_requested_by = "HashiCorp Learn"
-    change_reason       = "Learn AWS Control Tower Account Factory for Terraform V5"
+    change_reason       = "Learn AWS Control Tower Account Factory for Terraform V6"
   }
 
   custom_fields = {
     group = "non-prod"
   }
 
-  account_customizations_name = "sandbox"
+  account_customizations_name = "sandbox-2"
 }
